@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Ejercicio5 {
     public static void main(String[] args) {
-        int puesto = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el puesto: ");
+        int puesto = sc.nextInt();
         if (puesto == 1)
             System.out.println("Oro");
         else if (puesto == 2)

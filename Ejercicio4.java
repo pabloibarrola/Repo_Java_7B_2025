@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args) {
-        char categoria = 'a';
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese una categoría (a, b, c): ");
+        char categoria = sc.next().toLowerCase().charAt(0);
         if (categoria == 'a')
             System.out.println("hijo");
         else if (categoria == 'b')

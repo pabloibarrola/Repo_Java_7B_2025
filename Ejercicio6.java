@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args) {
-        int curso = 11;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el curso (número): ");
+        int curso = sc.nextInt();
         if (curso == 0)
             System.out.println("jardín de infantes");
         else if (curso >= 1 && curso <= 6)

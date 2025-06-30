@@ -1,12 +1,20 @@
+import java.util.Scanner;
+
 public class Ejercicio17a {
     public static void main(String[] args) {
-        int nota1 = 8, nota2 = 8, nota3 = 6;
-        int sumaPares = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nota 1: ");
+        int n1 = sc.nextInt();
+        System.out.print("Nota 2: ");
+        int n2 = sc.nextInt();
+        System.out.print("Nota 3: ");
+        int n3 = sc.nextInt();
 
-        if (nota1 % 2 == 0) sumaPares += nota1;
-        if (nota2 % 2 == 0) sumaPares += nota2;
-        if (nota3 % 2 == 0) sumaPares += nota3;
+        int suma = 0;
+        if (n1 % 2 == 0) suma += n1;
+        if (n2 % 2 == 0) suma += n2;
+        if (n3 % 2 == 0) suma += n3;
 
-        System.out.println("Suma de notas pares: " + sumaPares);
+        System.out.println("Suma de notas pares: " + suma);
     }
 }

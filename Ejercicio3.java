@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String[] args) {
-        String mes = "mayo";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el nombre del mes: ");
+        String mes = sc.next().toLowerCase();
         if (mes.equals("noviembre") || mes.equals("abril") || mes.equals("junio") || mes.equals("septiembre"))
             System.out.println(mes + " tiene 30 días.");
         else if (mes.equals("febrero"))
